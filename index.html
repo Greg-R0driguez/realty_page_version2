@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Realty Site</title>
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="dark-bg">
+        <div class="container">
+            <h1>Hello, my name is <span class="green-text">Greg Rodriguez</span></h1>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <section>
+        <div class="container">
+            <h2>I am a <span class="green-text">Texas Realtor</span></h2>
+            <p class="text-left">I have over eight years of real estate experience. Including buying, selling, and mananging multi-family properties.</p>
+            <button class="btn" id="open-modal-btn">Contact me</button>
+        </div>
+    </section>
+
+    <section class="dark-bg">
+        <div class="container">
+            <h2>Why choose me</h2>
+            <ul class="text-left">
+                <li>I have dedication, professionalism, and integrity.</li>
+                <li>ABC realty group has over 20 years of experience.</li>
+                <li>You will be priority and I will be there every step of the way.</li>
+            </ul>
+            <a class="link-btn btn" href="https://www.zillow.com/" target="_blank">Search Properties</a>
+        </div>
+    </section>
+
+    <!-- Image Carousel -->
+    <section>
+        <div class="carousel">
+            <h2>Current Listings</h2>
+
+            <div class="carousel-item carousel-item-visible">
+                <img src="images/house1.jpg" alt="house with a yard">
+                <p>123 Main St.</p>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/house2.jpg" alt="second house with a yard">
+                <p>456 Main St.</p>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/house3.jpg" alt="third house with a yard">
+                <p>789 Main St.</p>
+            </div>
+
+            <div class="carousel-actions">
+                <button id="prev-btn">
+                    <span class="material-icons-outlined">chevron_left</span>
+                </button>
+
+                <button id="next-btn">
+                    <span class="material-icons-outlined">chevron_right</span>
+                </button>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="dark-bg">
+        <p>ABC Realty Group</p>
+    </footer>
+
+    <!-- Contact modal box -->
+    <div id="overlay">
+        <div id="modal">
+            <h3>Contact details</h3>
+            <a class="modal-links" href="mailto:abcrealty@gmail.com" target="_blank">abcrealty@gmail.com</a>
+            <a class="modal-links" href="tel:555-555-5555" target="_blank">(555) 555-5555</a>
+                <a class="modal-links" href="https://www.google.com/maps/place/Corpus+Christi+Realty+Group/@27.7102321,-97.3865575,15z/data=!4m5!3m4!1s0x0:0xca6f775245705a3c!8m2!3d27.7102784!4d-97.3866512" target="_blank">Directions
+                </a>
+            <button id="close-modal-btn" class="btn">Close</button>
+        </div>
+    </div>    
+
+    <script src="scripts.js"></script>
+</body>
+</html>

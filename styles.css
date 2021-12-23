@@ -1,0 +1,182 @@
+/* main content */
+body {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+}
+
+.dark-bg {
+    background: #252525;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header, 
+section {
+    padding: 50px;
+}
+
+h1 {
+     font-size: 60px;
+}
+
+h2 {
+    border: #C4C4C4 solid 1px;
+    border-left: 0;
+    border-right: 0;
+    padding: 15px 0;
+    font-size: 40px;
+}
+
+.text-left {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.green-text {
+    font-weight: bold;
+    display: block;
+    color: #71C294;
+}
+
+li {
+    padding: 15px;
+}
+
+footer {
+    padding: 5px 0;
+}
+
+/* main content buttons */
+.link-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    background:  #71C294;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+.btn:active {
+    opacity: .8;
+}
+
+/* modal  */
+#overlay {
+    display: none;   
+    position: absolute;
+    width: 100%;
+    height: 155%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#modal { 
+    max-width: 600px;
+    top: 30%;
+    background: white;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    border: solid 3px #99D930;
+}
+
+.modal-links {
+    display: block;
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+
+/* carousel */
+.carousel {
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: relative;
+}
+.carousel-item,
+.carousel-item-hidden {
+    display: none;
+}
+
+.carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.3s;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel p { 
+    font-weight: bold;  
+}
+
+/* carousel buttons */
+.carousel-actions {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 55%;
+    
+}
+
+.material-icons-outlined {
+    background: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+#next-btn,
+#prev-btn {
+    background-color: transparent;
+    padding: 2px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#next-btn {
+    margin-right: 10px;
+}
+
+#prev-btn {
+    margin-left: 10px;
+}
+
+/* animations */
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
